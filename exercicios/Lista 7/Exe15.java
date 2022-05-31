@@ -12,21 +12,17 @@ public class Exe15 {
             numeros[i] = tec.nextInt();
         }
 
-        int j = 0, number, fator = 2;
+        int j = 0, fator = 2;
         
         while (j < numeros.length) {
-            number = numeros[j];
             System.out.print("\n"+numeros[j]+" - ");
             fator = 1;
             
-            for (; fator <= number;) {
+            for (; fator <= numeros[j];) {
                 
-                if (number % fator == 0) {
-                    number = number/fator;
+                if (numeros[j] % fator == 0) {
                     System.out.print(fator + " ; ");
                     fator++;
-                } else if (number == 1) {
-                    break;
                 } else {
                     fator = fator + 1;
                 }
