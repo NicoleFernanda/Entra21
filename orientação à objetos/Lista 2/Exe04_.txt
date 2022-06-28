@@ -1,0 +1,14 @@
+Classe Exe04_ 
+
+Atributos: 
+String dataleitura
+String nleitura
+int kwgasto
+float valorapagar
+String datapagto
+
+Métodos:
+metodo menorMaior()
+metodo mediaConsumo()
+metodo imprimir()
+

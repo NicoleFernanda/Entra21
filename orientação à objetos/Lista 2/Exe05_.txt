@@ -1,0 +1,116 @@
+CLASSES
+professor;
+tecnico;
+disciplinas;
+alunos;
+curso;
+
+
+
+
+
+
+
+
+CLASSE PROFESSOR
+////////atributos:
+String nome;
+String cpf;
+String endereco;
+String cpf;
+String telefone;
+String ctps;
+float salario;
+
+int quant; //quantidade de professores
+
+String titulacao[quant];//ESPECIFICO
+String area[quant];//ESPECIFICO
+
+int maxDisciplinas;//numero max por prof
+String ministradas[quant][maxDisciplinas][1]; 
+			//1 = cada curso;
+
+////////metodos:
+metodo areaEtitulacao();
+metodo inserirDisciplinas();
+metodo imrpime();
+
+
+
+
+
+
+
+
+CLASSE TECNICO
+////////atributos:
+String nome;
+String cpf;
+String endereco;
+String cpf;
+String telefone;
+String ctps;
+float salario;	
+
+int quant;//quantidade de tecnicos
+String cargo[];//ESPECIFICO
+String departamento[];//ESPECIFICO
+
+////////metodos:
+metodo cargosDosTecnicos();
+metodo departamentosDosTecnicos();
+metodo imprime();
+
+
+
+
+
+
+
+
+CLASSE DISCIPLINAS
+////////atributos:
+num;//quantas disciplinas
+String disciplinas[num][3];//3 = codigo+nome+duracao
+
+////////metodos:
+metodo inserirDados;//sobre as disciplinas
+metodo imprimir;
+
+
+
+
+
+
+
+
+CLASSE ALUNOS
+////////atributos:
+int quant;//quantidade alunos
+int quantidadeDisciplinasporAluno;
+int a = quantidadeDisciplinasporAluno;//assim cabe
+String nomeDisciplinas[quant][a];//quant = nomealuno
+				//a = nome materias
+String aluno[quant][4];//4 = nome+curso+cpf+matricul
+
+////////metodos:
+metodo disciplinasDosAlunos();//nomeDisciplinas
+metodo informacoesAlunos();//string aluno
+metodo imprime();
+
+
+
+
+
+
+
+
+CLASSE CURSOS
+////////atributos:
+aux;//quantos cursos
+String curso[aux][3];//3 = codigo+nome+duracao
+
+////////metodos:
+metodo inserirInformacoes();//string cursos[][]
+metodo imprimir();
